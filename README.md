@@ -65,12 +65,16 @@ A escolha do `COPY INTO` garante que, caso novos arquivos sejam adicionados ao v
 ans-medallion-pipeline/
 │
 ├── deploy/
+│   ├── jobs/
+│   │   └── ans_data_pipeline_medallion_e2e.json
+│   │
 │   ├── scripts_create/
 │   │   ├── 01_catalog.sql
 │   │   ├── 02_schemas.sql
 │   │   ├── 03_volumes.sql
 │   │   └── 04_create_table.sql
-│   └── script_deploy.sql
+│   │
+│   └── 00_run_deploy.sql
 │
 ├── pipeline/
 │   ├── 01-bronze.sql
@@ -83,7 +87,12 @@ ans-medallion-pipeline/
 │   └── q3_municipio.sql
 │
 ├── assets/
-│   └── job_success.png   ← inserir print aqui
+│   ├── image_1774660898040.png
+│   ├── image_1774660946232.png
+│   ├── image_1774660991767.png
+│   ├── image_1774661037625.png
+│   ├── image_1774661068132.png
+│   └── image_1774661179983.png
 │
 └── README.md
 ```
