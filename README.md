@@ -105,7 +105,7 @@ ans-medallion-pipeline/
 
 Antes de rodar o pipeline, é necessário criar toda a infraestrutura:
 
-![image_1774661179983.png](./image_1774661179983.png "image_1774661179983.png")
+![SC_DEPLOY.png](assets/SC_DEPLOY.png)
 
 Este script cria:
 
@@ -138,9 +138,9 @@ brz_ingest → slv_transform → gld_aggregate
 
 ## 📸 Evidência de Execução
 
-![image_1774660898040.png](./image_1774660898040.png "image_1774660898040.png")
+![E2E.png](assets/E2E.png)
 
-![image_1774660946232.png](./image_1774660946232.png "image_1774660946232.png")
+![E2E_DETAIL.png](assets/E2E_DETAIL.png)
 
 
 ---
@@ -152,9 +152,7 @@ brz_ingest → slv_transform → gld_aggregate
 * Agrupamento por operadora
 * Ordenação decrescente
 * Limite de 5
-
-![image_1774660991767.png](./image_1774660991767.png "image_1774660991767.png")
-
+![TOP_5_OPERADORES.png](assets/TOP_5_OPERADORES.png)
 
 ---
 
@@ -163,7 +161,7 @@ brz_ingest → slv_transform → gld_aggregate
 * Identificação da faixa com maior volume
 * Retorno direto do maior valor
 
-![image_1774661037625.png](./image_1774661037625.png "image_1774661037625.png")
+![FAIXA_ETÁRIA.png](assets/FAIXA_ETÁRIA.png)
 
 ---
 
@@ -171,8 +169,8 @@ brz_ingest → slv_transform → gld_aggregate
 
 * Agrupamento por município
 * Ordenação decrescente
-
-![image_1774661068132.png](./image_1774661068132.png "image_1774661068132.png")
+* Retorno completo dos municípios
+![DISTRIBUIÇÃO_MUNICIPIO.png](assets/DISTRIBUIÇÃO_MUNICIPIO.png)
 
 ---
 
