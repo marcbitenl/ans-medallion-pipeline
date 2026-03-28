@@ -178,10 +178,36 @@ brz_ingest → slv_transform → gld_aggregate
 
 ---
 
+## 🧠 Decisões de Engenharia
+
+Durante o desenvolvimento do pipeline, algumas decisões técnicas foram tomadas com foco em eficiência e boas práticas:
+
+### 🔹 Particionamento
+
+Optou-se por não particionar as tabelas, pois o volume de dados é relativamente pequeno (< 1TB).  
+A aplicação de particionamento nesse cenário poderia gerar overhead desnecessário, aumento de arquivos pequenos e degradação de performance em operações de leitura e escrita.
+
+---
+
+### 🔹 Uso de Cache
+
+O uso de cache não foi aplicado, pois o pipeline segue um fluxo linear (Bronze → Silver → Gold), sem reutilização de DataFrames intermediários.  
+A aplicação de cache neste caso não traria ganho de performance e poderia gerar consumo desnecessário de memória.
+
+---
+
+### 🔹 Privacidade de Dados (PII)
+
+Após análise do dataset, não foram identificados dados pessoais sensíveis (PII).  
+Os dados são agregados por operadora, município e faixa etária, não permitindo a identificação individual de beneficiários.
+
+Dessa forma, não foi necessária a aplicação de técnicas de mascaramento de dados.
+
 # 📌 Observações Importantes
 
 * O deploy deve ser executado antes do pipeline
 * O pipeline é reexecutável
 * Estrutura preparada para evolução futura (novos arquivos)
+
 
 
