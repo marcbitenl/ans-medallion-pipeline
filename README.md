@@ -182,14 +182,6 @@ brz_ingest → slv_transform → gld_aggregate
 
 * O deploy deve ser executado antes do pipeline
 * O pipeline é reexecutável
-* O uso de `COPY INTO` evita duplicidade de ingestão
 * Estrutura preparada para evolução futura (novos arquivos)
 
----
 
-# 👨‍💻 Autor
-
-**Marcos Bitencourt Leal**
-Data Engineer – Azure | Databricks
-
----
