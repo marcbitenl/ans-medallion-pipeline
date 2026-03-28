@@ -170,6 +170,7 @@ brz_ingest → slv_transform → gld_aggregate
 * Agrupamento por município
 * Ordenação decrescente
 * Retorno completo dos municípios
+
 ![DISTRIBUIÇÃO_MUNICIPIO.png](assets/DISTRIBUIÇÃO_MUNICIPIO.png)
 
 ---
