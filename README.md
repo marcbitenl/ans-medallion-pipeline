@@ -1,5 +1,8 @@
 # 📊 ANS Data Pipeline – Medallion Architecture
 
+<img width="2275" height="900" alt="image" src="https://github.com/user-attachments/assets/0a7ec9e1-faa8-4458-88ce-6fcb27c6b789" />
+
+
 ---
 
 ## 📌 Objetivo
